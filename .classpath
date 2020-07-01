@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/Nikhil/Downloads/Compressed/poi-4.1.1/lib/activation-1.1.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Nikhil/Downloads/Compressed/poi-4.1.1/lib/commons-codec-1.13.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Nikhil/Downloads/Compressed/poi-4.1.1/lib/commons-collections4-4.4.jar"/>
@@ -29,5 +38,64 @@
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Users/Nikhil/Downloads/Compressed/poi-4.1.1/ooxml-lib/curvesapi-1.06.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Nikhil/Downloads/Compressed/poi-4.1.1/ooxml-lib/xmlbeans-3.1.0.jar"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/charsets.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/deploy.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/javaws.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/jce.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/jfr.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/jfxswt.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/jsse.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/management-agent.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/plugin.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/resources.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/rt.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/ext/access-bridge-64.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/ext/cldrdata.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/ext/dnsns.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/ext/jaccess.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/ext/jfxrt.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/ext/localedata.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/ext/nashorn.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/ext/sunec.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/ext/sunjce_provider.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/ext/sunmscapi.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/ext/sunpkcs11.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/jre/lib/ext/zipfs.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/ant-javafx.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/dt.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/javafx-mx.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/packager.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/sa-jdi.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/tools.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/com.sun.el_2.2.0.v201303151357.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/javax.annotation_1.2.0.v201401042248.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/javax.el_2.2.0.v201303151357.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/javax.inject_1.0.0.v20091030.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/javax.servlet.jsp_2.2.0.v201112011158.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/javax.servlet_3.0.0.v201112011016.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/javax.xml_1.3.4.v201005080400.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/org.apache.batik.css_1.7.0.v201011041433.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/org.apache.batik.util.gui_1.7.0.v200903091627.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/org.apache.batik.util_1.7.0.v201011041433.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/org.apache.commons.codec_1.6.0.v201305230611.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/org.apache.commons.logging_1.1.1.v201101211721.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/org.apache.felix.gogo.command_0.10.0.v201209301215.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/org.apache.felix.gogo.runtime_0.10.0.v201209301036.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/org.apache.felix.gogo.shell_0.10.0.v201212101605.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/org.apache.httpcomponents.httpclient_4.2.6.v201311072007.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/org.apache.httpcomponents.httpcore_4.2.5.v201311072007.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/org.apache.jasper.glassfish_2.2.2.v201205150955.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/org.apache.lucene.analysis_3.5.0.v20120725-1805.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/org.apache.lucene.core_3.5.0.v20120725-1805.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/org.eclipse.core.commands.nl_ja_4.4.0.v20140623020002.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/org.eclipse.core.commands.nl_zh_4.4.0.v20140623020002.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_102/lib/missioncontrol/plugins/org.eclipse.core.commands_3.6.100.v20140528-1422.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/CDC-1.0%Foundation-1.0"/>
+	<classpathentry kind="output" path="target/classes"/>
 </classpath>
