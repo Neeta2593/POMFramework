@@ -5,18 +5,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import ObjectRepository.OR;
+import Utilities.ExcelUtility;
+import pages.CustomerPage;
 import pages.HomePage;
 import pages.LoginPage;
-import Utilities.ExcelUtility;
 
-public class TestLogin extends ExcelUtility {
-	String TestCaseName = "TestLogin";
+public class TestNewCustomer extends ExcelUtility {
+	public static String TestCaseName = "TestNewCustomer";
 	HomePage objHome;
 	LoginPage objLogin;
+	CustomerPage objCustomer;
 	WebDriver driver;
-	//OR obj= new OR();
 	
 @BeforeTest
 public void setup(){
@@ -27,9 +27,8 @@ public void setup(){
 	driver.manage().window().maximize();
 }
 	
-  @Test(dataProvider= "TestData")
-  public void test_Home_Page_After_Login(String UserID, String Password)  {
-	  
+  @Test(priority = 0, dataProvider= "TestData")
+  public void test_Home_Page_After_Login(String UserID, String Password, String CustomerName, String DOB) throws InterruptedException {
 	objLogin= new LoginPage(driver);
 	String loginPageTitle = objLogin.getLoginTitle();
 	Assert.assertTrue(loginPageTitle.toLowerCase().contains("guru99 bank"));
@@ -37,6 +36,15 @@ public void setup(){
 	
 	objHome = new HomePage(driver);
 	Assert.assertTrue(objHome.getHomePageDashboardUserName().toLowerCase().contains("manger id : mgr123"));
-	driver.close();
+	
   }
+  @Test(priority = 1, dataProvider= "TestData")
+	  public void fillNewCustomer(String UserID, String Password, String CustomerName, String DOB) throws InterruptedException{
+		  objHome.clickNewCustomer();
+		  Thread.sleep(1000);
+		  objCustomer= new CustomerPage(driver);
+		  objCustomer.fillCustomerForm(CustomerName, DOB);
+		  driver.close();
+	  }
+  
 }

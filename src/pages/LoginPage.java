@@ -1,13 +1,9 @@
 package pages;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import ObjectRepository.OR;
 
 public class LoginPage {
-	By byuserID= By.name("uid");
-	By bypassword= By.name("password");
-	By bylogin= By.name("btnLogin");
-	By titleText =By.className("barone");
+	 
 	WebDriver driver;
 	
 	public LoginPage(WebDriver driver){
@@ -15,19 +11,19 @@ public class LoginPage {
 	}
 	
 	public void setUserID(String userID) {
-		driver.findElement(byuserID).sendKeys(userID);
+		driver.findElement(OR.objbyuid).sendKeys(userID);
 	}
 	
 	public void setPassword(String password) {
-		driver.findElement(bypassword).sendKeys(password);
+		driver.findElement(OR.objbypassword).sendKeys(password);
 	}
 	
 	public void clickLogin() {
-		driver.findElement(bylogin).click();
+		driver.findElement(OR.objbylogin).click();
 	}
 	
 	public String getLoginTitle(){
-		return driver.findElement(titleText).getText();
+		return driver.findElement(OR.objtitleText).getText();
 	    }
 	
 	  public void loginToApp(String strUserName,String strPasword){

@@ -1,16 +1,18 @@
 package pages;
 
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
+import ObjectRepository.OR;
 
 public class HomePage {
-	 WebDriver driver;
-	 By homePageUserName = By.xpath("//table//tr[@class='heading3']");
-	 
-	 public HomePage(WebDriver driver){
-		 this.driver= driver;
+		 WebDriver driver;	
+		 public HomePage(WebDriver driver){
+			 this.driver= driver;
+		}
+		 public String getHomePageDashboardUserName(){
+	         return    driver.findElement(OR.objhomePageUserName).getText();
+	     }
+		 public void clickNewCustomer(){
+			 driver.findElement(OR.objNewCustomer).click();
 		 }
-	 public String getHomePageDashboardUserName(){
-         return    driver.findElement(homePageUserName).getText();
-        }
 	 }
