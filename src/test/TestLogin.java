@@ -16,7 +16,6 @@ public class TestLogin extends ExcelUtility {
 	HomePage objHome;
 	LoginPage objLogin;
 	WebDriver driver;
-	//OR obj= new OR();
 	
 @BeforeTest
 public void setup(){
@@ -28,7 +27,7 @@ public void setup(){
 }
 	
   @Test(dataProvider= "TestData")
-  public void test_Home_Page_After_Login(String UserID, String Password)  {
+  public void test_Home_Page_After_Login(String UserID, String Password, String CustomerName, String DOB)  {
 	  
 	objLogin= new LoginPage(driver);
 	String loginPageTitle = objLogin.getLoginTitle();

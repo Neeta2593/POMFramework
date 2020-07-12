@@ -4,7 +4,7 @@
   <test thread-count="1" verbose= "1" parallel="false" name="Test">
     <classes>
      <class name="test.TestNewCustomer"/>
-    <!-- <class name="test.TestLogin"/> -->  
+     <class name="test.TestLogin"/>  
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

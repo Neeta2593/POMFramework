@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="29098" started-at="2020-07-09T11:54:45Z" finished-at="2020-07-09T11:55:14Z">
+  <suite name="Suite" duration-ms="53773" started-at="2020-07-12T05:31:24Z" finished-at="2020-07-12T05:32:18Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="29098" started-at="2020-07-09T11:54:45Z" finished-at="2020-07-09T11:55:14Z">
+    <test name="Test" duration-ms="53773" started-at="2020-07-12T05:31:24Z" finished-at="2020-07-12T05:32:18Z">
       <class name="test.TestNewCustomer">
-        <test-method status="PASS" signature="setup()[pri:0, instance:test.TestNewCustomer@13a5fe33]" name="setup" is-config="true" duration-ms="19669" started-at="2020-07-09T11:54:45Z" finished-at="2020-07-09T11:55:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="test_Home_Page_After_Login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.TestNewCustomer@13a5fe33]" name="test_Home_Page_After_Login" duration-ms="5095" started-at="2020-07-09T11:55:06Z" data-provider="TestData" finished-at="2020-07-09T11:55:11Z">
+        <test-method status="PASS" signature="test_Home_Page_After_Login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.TestNewCustomer@5f9d02cb]" name="test_Home_Page_After_Login" duration-ms="7396" started-at="2020-07-12T05:32:01Z" data-provider="TestData" finished-at="2020-07-12T05:32:09Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Home_Page_After_Login -->
-        <test-method status="PASS" signature="TestNewCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:test.TestNewCustomer@13a5fe33]" name="TestNewCustomer" duration-ms="2769" started-at="2020-07-09T11:55:12Z" data-provider="TestData" finished-at="2020-07-09T11:55:14Z">
+        <test-method status="PASS" signature="fillNewCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:test.TestNewCustomer@5f9d02cb]" name="fillNewCustomer" duration-ms="3734" started-at="2020-07-12T05:32:14Z" data-provider="TestData" finished-at="2020-07-12T05:32:18Z">
           <params>
             <param index="0">
               <value>
@@ -62,8 +58,44 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestNewCustomer -->
+        </test-method> <!-- fillNewCustomer -->
       </class> <!-- test.TestNewCustomer -->
+      <class name="test.TestLogin">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.TestLogin@63753b6d]" name="setup" is-config="true" duration-ms="18818" started-at="2020-07-12T05:31:24Z" finished-at="2020-07-12T05:31:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.TestNewCustomer@5f9d02cb]" name="setup" is-config="true" duration-ms="15621" started-at="2020-07-12T05:31:43Z" finished-at="2020-07-12T05:31:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="test_Home_Page_After_Login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.TestLogin@63753b6d]" name="test_Home_Page_After_Login" duration-ms="4979" started-at="2020-07-12T05:32:09Z" data-provider="TestData" finished-at="2020-07-12T05:32:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mgr123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mgr!23]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Automation Tester]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[25/04/1993]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Home_Page_After_Login -->
+      </class> <!-- test.TestLogin -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

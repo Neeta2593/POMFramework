@@ -16,13 +16,8 @@ public class CustomerPage {
 	}	
 	public void setDate(String strDate) {
 		driver.findElement(OR.objbyDate).sendKeys(strDate);
-	}
-	public void setCAddress(String strCAddress) {
-		driver.findElement(OR.objCAddress).sendKeys(strCAddress);
-	}
-	
-	
-	  public void fillCustomerForm(String strCustomerName,String strDate){
+	}	
+	public void fillCustomerForm(String strCustomerName,String strDate){
 		  	this.setCustomerName(strCustomerName);
 	        this.selectGender();
 	        this.setDate(strDate);        
